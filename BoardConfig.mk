@@ -276,6 +276,12 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WIFI_DRIVER_MODULE_NAME := "wlan"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# BLOCK_BASED_OTA
+BLOCK_BASED_OTA := false
+
+# DISABLED BUILD NINJA
+USE_NINJA := false
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
