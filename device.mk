@@ -143,6 +143,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     fingerprintd
