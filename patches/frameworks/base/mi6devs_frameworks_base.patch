@@ -53,13 +53,13 @@ index 67f135c5d1a..5f9d8db3334 100644
      <!-- Permissions for setting the device alarm                        -->
      <!-- =============================================================== -->
 diff --git a/core/res/res/values/config.xml b/core/res/res/values/config.xml
-index f77f76aaf69..a5641e6c1a5 100755
+index 28d6fd6..992ab0c 100755
 --- a/core/res/res/values/config.xml
 +++ b/core/res/res/values/config.xml
-@@ -2947,4 +2947,10 @@
- 
-     <!-- Whether notify fingerprint client of successful cancelled authentication -->
-     <bool name="config_notifyClientOnFingerprintCancelSuccess">false</bool>
+@@ -2949,4 +2949,10 @@
+     <!-- If enabled, capacitive keys will only light up when pressed.
+          Otherwise, the buttons will light up whenever the user interacts with the device -->
+     <bool name="config_buttonLightOnKeypressOnly">false</bool>
 +
 +    <!-- The duration (in milliseconds) for the outgoing sms authorization request to timeout.-->
 +    <integer name="config_sms_authorization_timeout_ms">0</integer>
