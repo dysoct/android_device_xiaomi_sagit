@@ -292,6 +292,9 @@ PRODUCT_PACKAGES += \
     YahooWeatherProvider \
     WundergroundWeatherProvider
 
+# Telephony
+PRODUCT_BOOT_JARS += qti-telephony-common
+
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
