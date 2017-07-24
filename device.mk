@@ -116,7 +116,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -259,6 +259,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8998
 
+# SnapDragon Browser
+PRODUCT_PACKAGES += \
+    SnapBrowser
+
 # Messaging
 PRODUCT_PACKAGES += \
     messaging \
@@ -266,9 +270,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml \
-
-# Telephony
-PRODUCT_BOOT_JARS += qti-telephony-common
 
 # Wifi
 PRODUCT_PACKAGES += \

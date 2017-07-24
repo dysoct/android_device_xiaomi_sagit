@@ -53,31 +53,31 @@ index 67f135c5d1a..5f9d8db3334 100644
      <!-- Permissions for setting the device alarm                        -->
      <!-- =============================================================== -->
 diff --git a/core/res/res/values/config.xml b/core/res/res/values/config.xml
-index 28d6fd6..992ab0c 100755
+index b2c7efc..1996fb5 100755
 --- a/core/res/res/values/config.xml
 +++ b/core/res/res/values/config.xml
-@@ -2949,4 +2949,10 @@
-     <!-- If enabled, capacitive keys will only light up when pressed.
-          Otherwise, the buttons will light up whenever the user interacts with the device -->
-     <bool name="config_buttonLightOnKeypressOnly">false</bool>
-+
+@@ -2947,4 +2947,10 @@
+     <!-- Whether to show emergency button in power menu -->
+     <bool name="config_showEmergencyButtonInPowerMenu">false</bool>
+ 
 +    <!-- The duration (in milliseconds) for the outgoing sms authorization request to timeout.-->
 +    <integer name="config_sms_authorization_timeout_ms">0</integer>
 +
 +    <!-- Enable sms authorization framework-->
 +    <bool name="config_sms_authorization_enabled">false</bool>
++
  </resources>
 diff --git a/core/res/res/values/symbols.xml b/core/res/res/values/symbols.xml
-index 7154e94124c..f14a20c2bd4 100755
+index 2a710b3..9c191db 100755
 --- a/core/res/res/values/symbols.xml
 +++ b/core/res/res/values/symbols.xml
-@@ -2851,4 +2851,7 @@
-   <java-symbol type="bool" name="use_lock_pattern_drawable" />
-   <java-symbol type="drawable" name="lockscreen_notselected" />
-   <java-symbol type="drawable" name="lockscreen_selected" />
-+
+@@ -2869,4 +2869,7 @@
+   <!-- Emergency button in power menu -->
+   <java-symbol type="bool" name="config_showEmergencyButtonInPowerMenu" />
+ 
 +  <java-symbol type="integer" name="config_sms_authorization_timeout_ms" />
 +  <java-symbol type="bool" name="config_sms_authorization_enabled" />
++
  </resources>
 diff --git a/telephony/java/com/android/internal/telephony/ISmsSecurityAgent.aidl b/telephony/java/com/android/internal/telephony/ISmsSecurityAgent.aidl
 new file mode 100644

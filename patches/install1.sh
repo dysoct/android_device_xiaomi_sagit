@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="external/ebtables frameworks/base"
+dirs="frameworks/base"
 
 for dir in $dirs ; do
 	cd $rootdirectory
