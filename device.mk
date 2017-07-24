@@ -207,6 +207,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lights.msm8998
 
+# Open gapps
+GAPPS_VARIANT := pico
+
+$(call inherit-product, vendor/google/build/opengapps-packages.mk)
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
