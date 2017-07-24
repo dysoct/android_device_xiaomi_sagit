@@ -201,7 +201,7 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Wi-Fi
-wifi.interface=wlan0ro.display.series=OnePlus 5
+wifi.interface=wlan0
 
 # AANC
 persist.aanc.enable=true
@@ -355,50 +355,20 @@ persist.radio.apm_sim_not_pwdn=1
 persist.radio.sib16_support=1
 persist.radio.custom_ecc=1
 persist.radio.multisim.config=dsds
-persist.radio.ignore_dom_time=10
-persist.radio.rat_on=combine
-persist.radio.data_ltd_sys_ind=1
-persist.radio.data_con_rprt=1
-persist.radio.enhance_ecall=true
-persist.radio.hw_mbn_update=0
-persist.radio.sw_mbn_update=0
-persist.radio.start_ota_daemon=0
-
-# RmNet Data
-persist.rmnet.data.enable=true
-persist.data.wda.enable=true
-persist.data.df.dl_mode=5
-persist.data.df.ul_mode=5
-persist.data.df.agg.dl_pkt=10
-persist.data.df.agg.dl_size=4096
-persist.data.df.mux_count=8
-persist.data.df.iwlan_mux=9
-persist.data.df.dev_name=rmnet_usb0
-persist.data.iwlan.enable=true
-
-# Sensors
-ro.qti.sensors.dev_ori=true
-ro.qti.sensors.pmd=true
-ro.qti.sensors.sta_detect=true
-ro.qti.sensors.mot_detect=true
-ro.qti.sensors.dpc=true
-ro.qti.sensors.multishake=true
-
-# Timeservice
-persist.timed.enable=true
-
-# USB
-sys.usb.controller=a800000.dwc3
-sys.usb.rndis.func.name=gsi
-sys.usb.rmnet.func.name=gsi
-
-#VoLTE
-persist.volte_enabled_by_hw=1
-persist.dbg.ims_volte_enable=1
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
-# Wi-Fi
-wifi.interface=wlan0
-
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+ro.wlan.chip=39xx
+ro.btconfig.if=uart
+ro.btconfig.dev=/dev/ttyHS0
+ro.btconfig.vendor=qcom
+ro.btconfig.chip=QCA6164
+af.fast_track_multiplier=1
+audio_hal.period_size=192
+persist.audio.ras.enabled=false
+fm.a2dp.conc.disabled=true
+audio.noisy.broadcast.delay=300
+audio.offload.pstimeout.secs=3
+ro.audio.nojack=true
+audio.adm.buffering.ms=3
+persist.radio.apm_sim_not_pwdn=1
+persist.added_boot_bgservices=4
+persist.radio.redir_party_num=1
