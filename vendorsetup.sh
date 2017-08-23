@@ -21,6 +21,6 @@
 # function: add_lunch_combo generic-eng
 
 for var in eng user userdebug; do
-  add_lunch_combo jdc_sagit-$var
+  add_lunch_combo aosip_sagit-$var
 done
-cp -f device/xiaomi/sagit/aosp_sagit.mk vendor/aosp/products/jdc_sagit.mk
+sh device/xiaomi/sagit/patches/install.sh

@@ -1,4 +1,4 @@
-# ADSP
+gps# ADSP
 bin/adsprpcd
 vendor/lib64/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
@@ -209,6 +209,32 @@ vendor/lib/libsac.so
 vendor/lib/libarcsoft_dualcam_optical_zoom_control.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_dualcam_optical_zoom.so
+vendor/lib/libdualcameraddm.so
+vendor/lib/libblurbuster.so
+vendor/lib/libfiltergenerator.so
+vendor/lib64/libseemore.so
+vendor/lib64/liboptizoom.so
+vendor/lib64/libchromaflash.so
+vendor/lib64/libblurbuster.so
+
++#Camera app modules
+vendor/lib64/libjni_optizoom.so
+vendor/lib64/libjni_chromaflash.so
+vendor/lib64/libjni_makeupV2.so
+vendor/lib64/libjni_ubifocus.so
+vendor/lib64/libjni_blurbuster.so
+vendor/lib64/libjni_stillmore.so
+vendor/lib64/libjni_clearsight.so
+vendor/lib64/libjni_sharpshooter.so
+vendor/lib/libjni_optizoom.so
+vendor/lib/libjni_chromaflash.so
+vendor/lib/libjni_makeupV2.so
+vendor/lib/libjni_ubifocus.so
+vendor/lib/libjni_blurbuster.so
+vendor/lib/libjni_dualcamera.so
+vendor/lib/libjni_filtergenerator.so
+vendor/lib/libjni_stillmore.so
+vendor/lib/libjni_sharpshooter.so
 
 # Camera actuator
 vendor/lib/libactuator_centaur_imx386_ak7371_primax.so
@@ -707,6 +733,7 @@ etc/permissions/izat.xt.srv.xml
 etc/cacert_location.pem
 etc/xtra_root_cert.pem
 framework/com.qti.location.sdk.jar
+framework/com.qualcomm.location.vzw_library.jar
 framework/izat.xt.srv.jar
 -lib64/libloc_api_v02.so
 lib64/libloc_ds_api.so
@@ -724,15 +751,19 @@ vendor/lib64/libgeofence.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
 vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_ext.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblocationservice.so
 vendor/lib64/liblowi_client.so
+vendor/lib64/liblowi_wifihal.so
+vendor/lib64/liblowi_wifihal_nl.so
 vendor/lib64/libquipc_os_api.so
 vendor/lib64/libulp2.so
 vendor/lib64/libxt_native.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
+vendor/lib64/libslimclient.so
+vendor/lib64/libloc_ext.so
+vendor/lib64/libloc_externalDr.so
+vendor/lib64/liblocationservice_glue.so
+vendor/lib64/liblocationservice.so
 
 # Graphics
 vendor/lib64/egl/eglSubDriverAndroid.so
@@ -990,7 +1021,6 @@ etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
 framework/embmslibrary.jar
 -framework/qcrilhook.jar
-framework/qti-telephony-common.jar
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
