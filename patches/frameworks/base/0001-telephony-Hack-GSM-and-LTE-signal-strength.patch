@@ -1,0 +1,32 @@
+From edda4867a26557ff70f6982a9f8523e58b7d020f Mon Sep 17 00:00:00 2001
+From: dysoct <dysoct@gmail.com>
+Date: Wed, 23 Aug 2017 13:58:51 +0000
+Subject: [PATCH] telephony: Hack GSM and LTE signal strength
+
+makeSignalStrengthFromRilParcel() is used for both solicited and
+unsolicited requests, so we can hack it to send better signal strength
+values to the modem backend. This significantly helps in areas where
+GSM or LTE signal is poor but usable, in which case the modem would often
+disconnect completely or fall back to a lower network mode (resulting in
+poor UX).
+
+by sultanxda
+---
+ telephony/java/android/telephony/SignalStrength.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/telephony/java/android/telephony/SignalStrength.java b/telephony/java/android/telephony/SignalStrength.java
+index 9ba6e76..86428f4 100644
+--- a/telephony/java/android/telephony/SignalStrength.java
++++ b/telephony/java/android/telephony/SignalStrength.java
+@@ -327,7 +327,7 @@ public class SignalStrength implements Parcelable {
+         ss.mLteCqi = in.readInt();
+         ss.mTdScdmaRscp = in.readInt();
+         /* Hack signal strength */
+-        if (ss.mGsmSignalStrength < 27) ss.mGsmSignalStrength += 3;
++        if (ss.mGsmSignalStrength < 92) ss.mGsmSignalStrength += 4;
+         if (ss.mLteSignalStrength < 91) ss.mLteSignalStrength += 5;
+         if (ss.mLteRsrp != ss.INVALID && ss.mLteRsrp > 49) ss.mLteRsrp -= 5;
+         if (ss.mLteRsrq != ss.INVALID && ss.mLteRsrq > 3) ss.mLteRsrq -= 2;
+--
+2.7.4
