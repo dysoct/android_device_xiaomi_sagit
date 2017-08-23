@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="external/ebtables frameworks/base/data/keyboards"
+dirs="frameworks/base/data/keyboards"
 
 for dir in $dirs ; do
 	cd $rootdirectory
