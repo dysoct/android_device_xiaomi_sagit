@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="frameworks/base/data/keyboards"
+dirs=""
 
 for dir in $dirs ; do
 	cd $rootdirectory
