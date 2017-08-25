@@ -1,4 +1,4 @@
-gps# ADSP
+# ADSP
 bin/adsprpcd
 vendor/lib64/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so

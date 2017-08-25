@@ -19,7 +19,7 @@
 <!-- OpenGapps Project -->
 <remote name="opengapps" fetch="https://github.com/opengapps/"  />
 
-<project path="vendor/google/build" name="aosp_build" revision="master" remote="opengapps" />
+<project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
 <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
 
 <!-- arm64 depends on arm -->
