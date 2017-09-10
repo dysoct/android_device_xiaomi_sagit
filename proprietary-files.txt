@@ -14,6 +14,7 @@ vendor/lib/libfastcvopt.so
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/dirac_resource.so
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
@@ -699,10 +700,6 @@ vendor/lib64/libssd.so
 vendor/lib/libQSEEComAPI.so
 
 # Fingerprint
-lib/hw/fingerprint.fpc.so
-lib64/hw/fingerprint.fpc.so
-lib/lib_fpc_tac_shared.so
-lib64/lib_fpc_tac_shared.so
 lib/hw/fingerprint.goodix.so
 lib64/hw/fingerprint.goodix.so
 lib/libgoodixfingerprintd_binder.so

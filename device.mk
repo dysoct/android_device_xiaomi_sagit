@@ -268,6 +268,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.sensors.sh \
@@ -288,6 +289,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml
+
+# SdcardFS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=1
+
 
 # Sensors
 PRODUCT_PACKAGES += \
