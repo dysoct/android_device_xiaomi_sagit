@@ -98,13 +98,19 @@ etc/firmware/rampatch_tlv_3.2.tlv
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8998.so
+lib/libCameraEffectJNI.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmm-qcamera.so
 lib/libMiCameraHal.so
 lib/libmorpho_memory_allocator.so
 lib/libmorpho_panorama.so
+lib/libmorpho_groupshot.so
 lib/libqomx_core.so
+lib64/libCameraEffectJNI.so
+lib64/libmorpho_memory_allocator.so
+lib64/libmorpho_panorama.so
+lib64/libmorpho_groupshot.so
 vendor/lib/libarcsoft_beautyshot_image_algorithm.so
 vendor/lib/libarcsoft_beauty_shot.so
 vendor/lib/libarcsoft_beautyshot.so
@@ -218,7 +224,8 @@ vendor/lib64/liboptizoom.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libblurbuster.so
 
-+#Camera app modules
+# Camera app modules
+framework/org.codeaurora.camera.jar
 vendor/lib64/libjni_optizoom.so
 vendor/lib64/libjni_chromaflash.so
 vendor/lib64/libjni_makeupV2.so
@@ -836,6 +843,8 @@ bin/imsqmidaemon
 etc/permissions/imscm.xml
 framework/imscmlibrary.jar
 framework/rcsimssettings.jar
+vendor/framework/qti-vzw-ims-internal.jar
+etc/permissions/qti-vzw-ims-internal.xml
 -vendor/app/ims/ims.apk
 -vendor/app/imssettings/imssettings.apk
 vendor/lib64/lib-dplmedia.so
@@ -951,6 +960,7 @@ vendor/lib/libperipheral_client.so
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
+framework/QPerformance.jar
 -vendor/app/colorservice/colorservice.apk
 vendor/bin/mm-pp-dpps
 vendor/lib64/libdisp-aba.so

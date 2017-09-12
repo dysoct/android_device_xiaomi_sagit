@@ -89,6 +89,10 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := sagit
 
+# Audio/media
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8998
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8998
+
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 
@@ -168,10 +172,6 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 HEALTHD_USE_FASTCHG_STATUS := true
 
 # CM Hardware
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(DEVICE_PATH)/cmhw
-BOARD_USES_CYANOGEN_HARDWARE := true
 TARGET_TAP_TO_WAKE_NODE :=  "/sys/devices/soc/c179000.i2c/i2c-5/5-0020/input/input1/wake_gesture"
 
 # CNE and DPM
@@ -261,7 +261,7 @@ USE_SENSOR_MULTI_HAL := true
 TARGET_INIT_VENDOR_LIB := libinit_sagit
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sagit
 
-# WebView Beta
+# WebView
 PREBUILT_WEBVIEW_VERSION := chromium
 
 # Wifi
