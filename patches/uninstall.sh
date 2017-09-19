@@ -2,7 +2,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="frameworks/base hardware/qcom/camera/msm8998 frameworks/base/core/java"
+dirs="frameworks/base hardware/qcom/camera/msm8998 frameworks/base/services/core/java"
 
 for dir in $dirs ; do
 	cd $rootdirectory
