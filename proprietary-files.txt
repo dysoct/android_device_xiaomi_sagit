@@ -66,15 +66,17 @@ vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
+vendor/lib64/libhwdaphal.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
-vendor/lib/libadm.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
+vendor/lib/libadm.so
 vendor/lib/libaudcal.so
+vendor/lib/libhwdaphal.so
 
 # Bluetooth
 bin/btnvtool
@@ -722,9 +724,11 @@ vendor/lib/hw/gatekeeper.msm8998.so
 
 # GPS
 bin/loc_launcher
+bin/lowi-server
 bin/xtwifi-client
 bin/xtwifi-inet-agent
 etc/permissions/com.qti.location.sdk.xml
+etc/permissions/com.qualcomm.location.vzw_library.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
 etc/cacert_location.pem
@@ -873,8 +877,6 @@ vendor/lib64/libvoice-svc.so
 
 # IPA
 bin/ipacm-diag
-
-# IPA FWs
 etc/firmware/ipa_fws.b00
 etc/firmware/ipa_fws.b01
 etc/firmware/ipa_fws.b02
@@ -898,18 +900,21 @@ lib64/libvpplibrary.so
 lib/libOmxVpp.so
 lib/libvpplibrary.so
 vendor/lib64/libI420colorconvert.so
+vendor/lib64/libmiracast.so
+vendor/lib64/libmm-color-convertor.so
+vendor/lib64/libmmosal.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmmosal.so
 vendor/lib64/libvpphvx.so
 vendor/lib/libI420colorconvert.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libmiracast.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
+vendor/lib/libOmxAacDec.so
+vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxVideoDSMode.so
+vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvqzip.so
 

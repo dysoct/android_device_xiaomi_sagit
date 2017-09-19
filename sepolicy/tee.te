@@ -1,0 +1,7 @@
+allow tee persist_qc_senseid_file:dir create_dir_perms;
+allow tee persist_qc_senseid_file:file create_file_perms;
+
+allow tee system_data_file:dir add_name;
+allow tee system_data_file:dir remove_name;
+allow tee system_data_file:dir write;
+allow tee system_data_file:file open;
