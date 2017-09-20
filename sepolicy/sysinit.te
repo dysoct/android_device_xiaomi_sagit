@@ -1,3 +1,9 @@
+type sysinit, domain;
+type sysinit_exec, exec_type, file_type;
+
+init_daemon_domain(sysinit)
+
+#============= sysinit ==============
 allow sysinit cache_file:dir getattr;
 allow sysinit kernel:process setsched;
 allow sysinit proc:file getattr;
