@@ -236,10 +236,9 @@ TARGET_USE_SDCLANG := true
 TARGET_POWERHAL_VARIANT := none
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/root/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
-#TARGET_USERIMAGES_USE_F2FS := true
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_sagit
@@ -260,9 +259,6 @@ USE_SENSOR_MULTI_HAL := true
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_sagit
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sagit
-
-# WebView
-PREBUILT_WEBVIEW_VERSION := chromium
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
